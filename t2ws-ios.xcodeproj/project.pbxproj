@@ -18,6 +18,7 @@
 		5D64F02822AC38A800D23300 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D64F02622AC38A000D23300 /* RobotoMono-Medium.ttf */; };
 		5D64F02922AC38A800D23300 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D64F02722AC38A000D23300 /* RobotoMono-Regular.ttf */; };
 		5D64F02D22AC50D700D23300 /* DropDatBuildResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F02C22AC50D700D23300 /* DropDatBuildResponse.swift */; };
+		5D67275722AE39630015BFFA /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D67275622AE39630015BFFA /* octicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5D64F02622AC38A000D23300 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		5D64F02722AC38A000D23300 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		5D64F02C22AC50D700D23300 /* DropDatBuildResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDatBuildResponse.swift; sourceTree = "<group>"; };
+		5D67275622AE39630015BFFA /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = ../../../../Library/Fonts/FontBase/octicons.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		5D4C2B7E22AC312D003367BA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				5D67275622AE39630015BFFA /* octicons.ttf */,
 				5D64F02622AC38A000D23300 /* RobotoMono-Medium.ttf */,
 				5D64F02722AC38A000D23300 /* RobotoMono-Regular.ttf */,
 				5D0BB66822AC31DC0077FE3F /* Phosphate.ttc */,
@@ -283,6 +286,7 @@
 			files = (
 				5D4C0C7922AB03250038B84A /* LaunchScreen.storyboard in Resources */,
 				5D4C0C7622AB03250038B84A /* Assets.xcassets in Resources */,
+				5D67275722AE39630015BFFA /* octicons.ttf in Resources */,
 				5D0BB66922AC32040077FE3F /* Phosphate.ttc in Resources */,
 				5D4C0C7422AB03240038B84A /* Main.storyboard in Resources */,
 				5D64F02822AC38A800D23300 /* RobotoMono-Medium.ttf in Resources */,

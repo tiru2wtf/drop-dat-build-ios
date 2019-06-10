@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var singerLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var card: UIView!
+    @IBOutlet weak var closeButton: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
         gradientView.layer.addSublayer(gradientLayer)
 
-        primaryButton.setTitle("time to drop?", for: UIControl.State.normal)
+        primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
         primaryButton.layer.cornerRadius = 4
         
         card.layer.cornerRadius = 4
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
                 DispatchQueue.main.sync {
                     self.singerLabel.text = singer;
                     self.songLabel.text = song
-                    self.primaryButton.setTitle("time to build?", for: UIControl.State.normal)
+                    self.primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
                     self.card.isHidden = false
                 }
             } catch {
@@ -91,4 +91,7 @@ class ViewController: UIViewController {
         URLCache.shared = URLCache()
     }
 
+    @IBAction func closeCard(_ sender: UIButton) {
+        card.isHidden = true
+    }
 }

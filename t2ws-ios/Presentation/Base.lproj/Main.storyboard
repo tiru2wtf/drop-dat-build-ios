@@ -16,6 +16,9 @@
         <array key="RobotoMono-Medium.ttf">
             <string>RobotoMono-Medium</string>
         </array>
+        <array key="octicons.ttf">
+            <string>octicons</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -46,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-HL-g9S">
-                                <rect key="frame" x="40" y="219" width="334" height="590"/>
+                                <rect key="frame" x="40" y="219" width="334" height="541"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tocando agora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-Tm-VcY">
@@ -75,6 +78,17 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.031372549020000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kg-fv-ecJ">
+                                        <rect key="frame" x="270" y="15" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="octicons" family="octicons" pointSize="24"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.031372549020000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iES-TH-1bg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -103,6 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="card" destination="M9h-HL-g9S" id="UB0-Z7-8gL"/>
+                        <outlet property="closeButton" destination="1Kg-fv-ecJ" id="5Lj-0D-3pf"/>
                         <outlet property="gradientView" destination="PPF-7M-o9K" id="aGO-iJ-0OZ"/>
                         <outlet property="primaryButton" destination="uj4-2o-cJE" id="WIa-Bv-sc9"/>
                         <outlet property="privada" destination="2Oc-DX-cbq" id="mmc-nX-iee"/>
