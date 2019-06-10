@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-
-        
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [#colorLiteral(red: 0.2, green: 0.03137254902, blue: 0.4039215686, alpha: 1).cgColor, #colorLiteral(red: 0.1882352941, green: 0.8117647059, blue: 0.8156862745, alpha: 1).cgColor,]
@@ -34,7 +32,7 @@ class ViewController: UIViewController {
 
         primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
         primaryButton.layer.cornerRadius = 4
-        
+
         card.layer.cornerRadius = 4
         card.isHidden = true
 
@@ -42,7 +40,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func requestDropDatBuild(_ sender: UIButton) {
-        primaryButton.setTitle("…carregando", for: UIControl.State.normal)
+        primaryButton.setTitle("… carregando", for: UIControl.State.normal)
         
         let config = URLSessionConfiguration.default
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
@@ -74,8 +72,8 @@ class ViewController: UIViewController {
             
             do {
                 let dropDatBuildResponse = try JSONDecoder().decode(dropDatBuild.self, from: jsonData)
-                let singer = dropDatBuildResponse.musicas[0].tocando[0].singer
-                let song = dropDatBuildResponse.musicas[0].tocando[0].song
+                let singer = dropDatBuildResponse.musicas[0].tocando[0].singer.lowercased().capitalizingFirstLetter()
+                let song = dropDatBuildResponse.musicas[0].tocando[0].song.lowercased().capitalizingFirstLetter()
                 print(singer,song)
                 DispatchQueue.main.sync {
                     self.singerLabel.text = singer;
