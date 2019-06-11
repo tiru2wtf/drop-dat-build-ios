@@ -32,9 +32,7 @@ class ViewController: UIViewController {
 
         primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
         primaryButton.layer.cornerRadius = 4
-        
-   
-
+     
         card.layer.cornerRadius = 4
         card.isHidden = true
 

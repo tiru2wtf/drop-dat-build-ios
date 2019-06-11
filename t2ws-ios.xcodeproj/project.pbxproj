@@ -19,7 +19,7 @@
 		5D64F02922AC38A800D23300 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D64F02722AC38A000D23300 /* RobotoMono-Regular.ttf */; };
 		5D64F02D22AC50D700D23300 /* DropDatBuildResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F02C22AC50D700D23300 /* DropDatBuildResponse.swift */; };
 		5D67275722AE39630015BFFA /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D67275622AE39630015BFFA /* octicons.ttf */; };
-		5D67275C22AE41D40015BFFA /* stringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67275B22AE41D40015BFFA /* stringExtention.swift */; };
+		5D67275C22AE41D40015BFFA /* SringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67275B22AE41D40015BFFA /* SringExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		5D64F02722AC38A000D23300 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		5D64F02C22AC50D700D23300 /* DropDatBuildResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDatBuildResponse.swift; sourceTree = "<group>"; };
 		5D67275622AE39630015BFFA /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = ../../../../Library/Fonts/FontBase/octicons.ttf; sourceTree = "<group>"; };
-		5D67275B22AE41D40015BFFA /* stringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtention.swift; sourceTree = "<group>"; };
+		5D67275B22AE41D40015BFFA /* SringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SringExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				5D64F02E22AC50F700D23300 /* Resources */,
 				5D64F02A22AC50AD00D23300 /* Sources */,
 				5D4C2B7E22AC312D003367BA /* Fonts */,
-				5D67275B22AE41D40015BFFA /* stringExtention.swift */,
+				5D67275B22AE41D40015BFFA /* SringExtention.swift */,
 			);
 			path = "t2ws-ios";
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D64F02D22AC50D700D23300 /* DropDatBuildResponse.swift in Sources */,
-				5D67275C22AE41D40015BFFA /* stringExtention.swift in Sources */,
+				5D67275C22AE41D40015BFFA /* SringExtention.swift in Sources */,
 				5D4C0C7122AB03240038B84A /* ViewController.swift in Sources */,
 				5D4C0C6F22AB03240038B84A /* AppDelegate.swift in Sources */,
 			);
