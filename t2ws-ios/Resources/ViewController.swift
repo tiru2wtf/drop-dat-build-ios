@@ -32,14 +32,18 @@ class ViewController: UIViewController {
 
         primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
         primaryButton.layer.cornerRadius = 4
+        
+   
 
         card.layer.cornerRadius = 4
         card.isHidden = true
 
     }
 
+    let impact = UIImpactFeedbackGenerator()
     
     @IBAction func requestDropDatBuild(_ sender: UIButton) {
+        impact.impactOccurred()
         primaryButton.setTitle("… carregando", for: UIControl.State.normal)
         
         let config = URLSessionConfiguration.default
@@ -90,6 +94,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func closeCard(_ sender: UIButton) {
+        impact.impactOccurred()
         card.isHidden = true
     }
 }
