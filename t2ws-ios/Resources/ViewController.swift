@@ -30,20 +30,32 @@ class ViewController: UIViewController {
 
         gradientView.layer.addSublayer(gradientLayer)
 
-        primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
+        let primaryButtonAttributedString = NSMutableAttributedString()
+        primaryButtonAttributedString.append(NSAttributedString(string: "time to ",
+                                                   attributes: [.underlineStyle: 0]))
+        primaryButtonAttributedString.append(NSAttributedString(string: "drop",
+                                                   attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue]))
+        primaryButtonAttributedString.append(NSAttributedString(string: "?",
+                                                   attributes: [.underlineStyle: 0]))
+        
+        primaryButton.setAttributedTitle(primaryButtonAttributedString, for: UIControl.State.normal)
         primaryButton.layer.cornerRadius = 4
      
         card.layer.cornerRadius = 4
         card.isHidden = true
 
     }
+    
 
     let impact = UIImpactFeedbackGenerator()
     
     @IBAction func requestDropDatBuild(_ sender: UIButton) {
         impact.impactOccurred()
-        primaryButton.setTitle("… carregando", for: UIControl.State.normal)
         
+        let primaryButtonAttributedString = NSMutableAttributedString()
+        primaryButtonAttributedString.append(NSAttributedString(string: "…carregando"))
+        primaryButton.setAttributedTitle(primaryButtonAttributedString, for: UIControl.State.normal)
+
         let config = URLSessionConfiguration.default
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         config.urlCache = nil
@@ -80,7 +92,15 @@ class ViewController: UIViewController {
                 DispatchQueue.main.sync {
                     self.singerLabel.text = singer;
                     self.songLabel.text = song
-                    self.primaryButton.setTitle("time to drop ?", for: UIControl.State.normal)
+                    let primaryButtonAttributedString = NSMutableAttributedString()
+                    primaryButtonAttributedString.append(NSAttributedString(string: "time to ",
+                                                                            attributes: [.underlineStyle: 0]))
+                    primaryButtonAttributedString.append(NSAttributedString(string: "drop",
+                                                                            attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue]))
+                    primaryButtonAttributedString.append(NSAttributedString(string: "?",
+                                                                            attributes: [.underlineStyle: 0]))
+                    
+                    self.primaryButton.setAttributedTitle(primaryButtonAttributedString, for: UIControl.State.normal)
                     self.card.isHidden = false
                 }
             } catch {
