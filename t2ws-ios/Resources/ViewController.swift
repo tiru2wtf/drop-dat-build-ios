@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var closeButton: UIButton!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
